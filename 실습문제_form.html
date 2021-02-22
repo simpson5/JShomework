@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습문제2</title>
+  </head>
+  <body>
+    <h1>form 실습문제 210222</h1>
+    <form action:"">
+      <fieldset>
+        <legend>납품자 정보</legend>
+        <ol>
+          <li>
+            <label for="name">납품자명 : </label>
+            <input type="text" name="name" id="name" required />
+          </li>
+          <li>
+            <label for="email">email : </label>
+            <input type="email" name="email" id="email" required />
+          </li>
+          <li>
+            <label for="hompage">홈페이지 : </label>
+            <input type="url" name="hompage" id="hompage" value="http://" />
+          </li>
+          <li>
+            <label for="area">지역 : </label>
+            <select name="area" id="area">
+              <option value="서울">서울</option>
+              <option value="대구">대구</option>
+              <option value="광주">광주</option>
+              <option value="부산">부산</option>
+              <option value="인천">인천</option>
+            </select>
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>납품 정보</legend>
+        <ul>
+          <li>
+            <label for="poductName">상품명 : </label>
+            <input type="text" name="poductName" id="poductName" required />
+          </li>
+          <li>
+            <label for="amount">납품수량 : </label>
+            <input type="number" name="amount" id="amount" required min="100" />
+          </li>
+          <li>
+            <label for="grade">납품등급 : </label>
+            <input type="range" name="grade" id="grade" required />
+          </li>
+          <li>
+            <label for="etc">기타사항 : </label>
+            <textarea
+              name="etc"
+              id="etc"
+              cols="30"
+              rows="2"
+              style="resize: none"
+            ></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="send message" />
+    </form>
+  </body>
+</html>
