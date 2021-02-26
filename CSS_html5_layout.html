@@ -29,21 +29,21 @@
       header nav ul {
         margin: 0px;
         padding: 0px;
-        list-style-type: "\20\20\20\7c\20\20\20";
+        list-style: none;
         position: absolute;
-        top: 100px;
+        bottom: 5px;
         right: 0px;
       }
-      header nav ul li:first-child {
-        list-style: none;
+      header nav ul li:not(:last-of-type)::after {
+        content: "|";
       }
       header nav ul li {
         float: left;
-        margin: 0px 10px;
       }
       header nav ul li a {
         text-decoration: none;
         color: #000;
+        padding: 0 10px;
       }
       header nav ul li a:hover {
         color: white;
@@ -108,12 +108,12 @@
         <p>Header</p>
         <nav>
           <ul>
-            <li><a href="">Home</a>&nbsp&nbsp</li>
-            <li><a href="">HTML5</a>&nbsp&nbsp</li>
-            <li><a href="">CSS3</a>&nbsp&nbsp</li>
-            <li><a href="">JQuery</a>&nbsp&nbsp</li>
-            <li><a href="">Mobile</a>&nbsp&nbsp</li>
-            <li><a href="">Profile</a>&nbsp&nbsp</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">HTML5</a></li>
+            <li><a href="">CSS3</a></li>
+            <li><a href="">JQuery</a></li>
+            <li><a href="">Mobile</a></li>
+            <li><a href="">Profile</a></li>
           </ul>
         </nav>
       </header>
