@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>실습문제4</title>
+    <style>
+      div {
+        margin: 0 auto;
+        background-color: lightgrey;
+        padding: 5px;
+        width: 800px;
+      }
+      header {
+        position: relative;
+        height: 100px;
+        background-color: tomato;
+        padding-top: 20px;
+        padding-left: 10px;
+        margin: 0px;
+      }
+      header p {
+        font-size: 40px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+      }
+      header nav ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: "\20\20\20\7c\20\20\20";
+        position: absolute;
+        top: 100px;
+        right: 0px;
+      }
+      header nav ul li:first-child {
+        list-style: none;
+      }
+      header nav ul li {
+        float: left;
+        margin: 0px 10px;
+      }
+      header nav ul li a {
+        text-decoration: none;
+        color: #000;
+      }
+      header nav ul li a:hover {
+        color: white;
+      }
+      section {
+        width: 600px;
+        height: 500px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-top: 10px;
+        background-color: lightslategray;
+        float: left;
+      }
+      section article p {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 5px 0;
+      }
+      aside {
+        width: 180px;
+        height: 500px;
+        padding-left: 10px;
+        padding-top: 10px;
+        float: left;
+        background-color: lime;
+        font-size: 24px;
+        font-weight: 600;
+      }
+      footer {
+        position: relative;
+        clear: both;
+        width: 100%;
+        height: 100px;
+        background-color: teal;
+      }
+      footer p {
+        position: absolute;
+        font-size: 24px;
+        font-weight: 600;
+        left: 10px;
+        top: 0px;
+        margin: 0px;
+      }
+      footer span {
+        position: absolute;
+        left: 25%;
+        top: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        <header> page 또는 보눈의 header
+        <nav> 네비게이션 내용을 표현. 위치가 자유롭다
+        <article> 본문. 내용이 독릭적이어야 한다.이 자체로 하나가 완성되어야 한다. 
+        <section> 연관된 컨텐츠를 grouping 스타일링 또는 스크립트적인 효과를 위한 grouping은 div태그를 사용한다.
+        <aside> 부가적인 내용. 목록, 광고, 날씨정보
+        <footer> 사이트 하단 또는 본문의 하단에 해당하는 내용으로 구성. 저작권표기. 작성자 인적사항
+    -->
+    <div>
+      <header>
+        <p>Header</p>
+        <nav>
+          <ul>
+            <li><a href="">Home</a>&nbsp&nbsp</li>
+            <li><a href="">HTML5</a>&nbsp&nbsp</li>
+            <li><a href="">CSS3</a>&nbsp&nbsp</li>
+            <li><a href="">JQuery</a>&nbsp&nbsp</li>
+            <li><a href="">Mobile</a>&nbsp&nbsp</li>
+            <li><a href="">Profile</a>&nbsp&nbsp</li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <article>
+          <p>Article 1</p>
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            aliquid cupiditate quibusdam sunt repudiandae, voluptatum rem.
+            Quaerat tenetur cupiditate nulla, consectetur dolorum corrupti vitae
+            totam sed provident ratione optio illo!
+          </span>
+        </article>
+        <article>
+          <p>Article 2</p>
+          <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            aliquid cupiditate quibusdam sunt repudiandae, voluptatum rem.
+            Quaerat tenetur cupiditate nulla, consectetur dolorum corrupti vitae
+            totam sed provident ratione optio illo!
+          </span>
+        </article>
+      </section>
+      <aside>Aside</aside>
+      <footer>
+        <p>footer</p>
+        <span>&lt;Copright 2017. KH정보교육원. ALL right reserved></span>
+      </footer>
+    </div>
+  </body>
+</html>
